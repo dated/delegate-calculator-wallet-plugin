@@ -1,0 +1,72 @@
+{
+	"name": "delegate-calculator-plugin",
+	"version": "1.1.0",
+	"description": "Compare delegate payouts and get an overview of your potential staking rewards directly in the Payvo Wallet",
+	"main": "dist/delegate-calculator-plugin.cjs.js",
+	"author": "dated <hello@dated.fun>",
+	"license": "MIT",
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dated/delegate-calculator-plugin.git"
+	},
+	"desktop-wallet": {
+		"title": "ARK Delegate Calculator",
+		"logo": "https://raw.githubusercontent.com/dated/delegate-calculator-plugin/master/logo.png",
+		"categories": [
+			"utility"
+		],
+		"permissions": [
+			"LAUNCH",
+			"HTTP",
+			"PROFILE",
+			"TIMERS",
+			"STORE"
+		],
+		"urls": [
+			"^"
+		],
+		"minimumVersion": "1.0.0"
+	},
+	"keywords": [
+		"utility",
+		"delegates",
+		"calculator",
+		"@arkecosystem",
+		"desktop-wallet",
+		"plugin"
+	],
+	"homepage": "https://github.com/dated/delegate-calculator-plugin",
+	"scripts": {
+		"format": "yarn lint && yarn prettier",
+		"lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+		"prettier": "prettier --write \"./*.{ts,tsx,js,json,md}\" \"./**/*.{ts,tsx,js,json,md}\"",
+		"prepublishOnly": "yarn build",
+		"build": "preconstruct build",
+		"watch": "preconstruct watch"
+	},
+	"dependencies": {
+		"@payvo/intl": "^1.0.1",
+		"react": "^16.13.1"
+	},
+	"devDependencies": {
+		"@babel/preset-react": "^7.14.5",
+		"@babel/preset-typescript": "^7.14.5",
+		"@preconstruct/cli": "^2.1.0",
+		"@types/eslint-plugin-prettier": "^3.1.0",
+		"@typescript-eslint/eslint-plugin": "^4.28.4",
+		"@typescript-eslint/parser": "^4.28.4",
+		"eslint": "^7.31.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-sort-keys-fix": "^1.1.1",
+		"eslint-plugin-unused-imports": "^1.1.2",
+		"prettier": "^2.3.2",
+		"typescript": "3.9.5"
+	}
+}
