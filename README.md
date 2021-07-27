@@ -8,8 +8,8 @@ Install this plugin directly through the Plugins Manager of the Payvo Wallet. Al
 
 ## Credits
 
-- [Edgar Goetzendorff](https://github.com/dated)
-- [All Contributors](../../contributors)
+-   [Edgar Goetzendorff](https://github.com/dated)
+-   [All Contributors](../../contributors)
 
 ## License
 
