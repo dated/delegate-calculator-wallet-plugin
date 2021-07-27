@@ -1,6 +1,6 @@
 # ARK Delegate Calculator Plugin
 
-> Compare delegate payouts and get an overview of your potential staking rewards directly in the ARK Desktop Wallet.
+> Compare delegate payouts and get an overview of your potential staking rewards on the ARK Public Network directly in the Payvo Wallet.
 
 ## Installation
 
