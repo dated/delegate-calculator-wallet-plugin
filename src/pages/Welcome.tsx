@@ -1,7 +1,6 @@
 import React from "react";
 
-const { Components } = globalThis.payvo;
-const { Box } = Components;
+import { CoinsIcon } from "../assets/icons/CoinsIcon";
 
 interface WelcomePageProps {
 	hasAcceptedDisclaimer: boolean;
@@ -26,7 +25,7 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 
 					<button
 						type="button"
-						className="mr-auto rounded transition-all duration-100 ease-linear font-semibold bg-white hover:bg-theme-danger-100 text-theme-danger-400 px-5 py-3 disabled:cursor-not-allowed"
+						className="mr-auto rounded transition-all duration-100 ease-linear font-semibold bg-theme-danger-300 hover:bg-theme-danger-200 text-white px-5 py-3"
 						onClick={onAcceptDisclaimer}
 					>
 						<span>I Understand</span>
@@ -44,9 +43,8 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 
 				<button
 					type="button"
-					className="mr-auto rounded transition-all duration-100 ease-linear font-semibold bg-white hover:bg-theme-danger-100 text-theme-danger-400 px-5 py-3 disabled:cursor-not-allowed"
+					className="mr-auto rounded transition-all duration-100 ease-linear font-semibold bg-theme-danger-300 hover:bg-theme-danger-200 text-white px-5 py-3"
 					onClick={handleImportWallet}
-					disabled
 				>
 					<span>Import a Wallet</span>
 				</button>
@@ -55,12 +53,14 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 	};
 
 	return (
-		<Box
-			as="div"
-			styled={{ backgroundColor: "#C9292C" }}
-			className="flex items-center w-full border-t border-theme-secondary-300 dark:border-theme-secondary-800"
-		>
-			<div className="flex mx-auto container p-10 justify-end items-center text-white">
+		<div className="flex items-center w-full border-t border-theme-secondary-300 dark:border-theme-secondary-800">
+      <div className="flex mx-auto container p-10 justify-end items-center">
+        <div className="w-1/2">
+          <div className="transform -rotate-6 p-16">
+            <CoinsIcon />
+          </div>
+        </div>
+
 				<div className="flex flex-col w-1/2">
 					<h1>ARK Delegate Calculator</h1>
 
@@ -69,7 +69,7 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 					<span className="mt-20 text-xs">© {new Date().getFullYear()} dated / v1.1.0</span>
 				</div>
 			</div>
-		</Box>
+		</div>
 	);
 };
 
