@@ -91,7 +91,7 @@ const DelegateDetails = ({ isOpen, delegate, onClose }: DelegateDetailsProps) =>
 			<Alert className="mt-4" variant="hint">
 				Visit{" "}
 				<Link to={`https://arkdelegates.live/delegate/${delegate.slug}`} isExternal>
-					https://arkdelegates.live/delegate/{delegate.slug}
+					arkdelegates.live/delegate/{delegate.slug}
 				</Link>{" "}
 				for more information about this delegate
 			</Alert>
