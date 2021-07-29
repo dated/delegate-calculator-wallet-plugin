@@ -4,7 +4,7 @@ import { CoinsIcon } from "../assets/icons/CoinsIcon";
 import { useWalletContext } from "../contexts/WalletProvider";
 
 const { Components } = globalThis.payvo;
-const { Link } = Components;
+const { Button, Link } = Components;
 
 interface WelcomePageProps {
 	hasAcceptedDisclaimer: boolean;
@@ -24,13 +24,9 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 						purposes only.
 					</span>
 
-					<button
-						type="button"
-						className="mr-auto text-sm rounded transition-all duration-100 ease-linear font-semibold bg-theme-danger-300 hover:bg-theme-danger-200 text-white px-5 py-3"
-						onClick={onAcceptDisclaimer}
-					>
+					<Button variant="danger" size="sm" className="mr-auto" onClick={onAcceptDisclaimer}>
 						<span>I Understand</span>
-					</button>
+					</Button>
 				</>
 			);
 		}
@@ -57,7 +53,7 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 		<div className="flex items-center w-full border-t border-theme-secondary-300 dark:border-theme-secondary-800">
 			<div className="flex mx-auto container p-10 justify-end items-center">
 				<div className="w-1/2">
-					<div className="transform -rotate-6 p-16">
+					<div className="transform -rotate-6 p-16 text-theme-danger-400 dark:text-theme-secondary-800">
 						<CoinsIcon />
 					</div>
 				</div>
