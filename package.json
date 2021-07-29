@@ -20,7 +20,6 @@
 			"LAUNCH",
 			"HTTP",
 			"PROFILE",
-			"TIMERS",
 			"STORE"
 		],
 		"urls": [
@@ -32,9 +31,8 @@
 		"utility",
 		"delegates",
 		"calculator",
-		"@arkecosystem",
-		"desktop-wallet",
-		"plugin"
+		"@payvo",
+		"wallet-plugin"
 	],
 	"homepage": "https://github.com/dated/delegate-calculator-plugin",
 	"scripts": {
