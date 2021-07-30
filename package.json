@@ -12,7 +12,7 @@
 	},
 	"desktop-wallet": {
 		"title": "ARK Delegate Calculator",
-		"logo": "https://raw.githubusercontent.com/dated/delegate-calculator-plugin/master/logo.png",
+		"logo": "https://raw.githubusercontent.com/dated/delegate-calculator-plugin/master/images/logo.png",
 		"categories": [
 			"utility"
 		],
