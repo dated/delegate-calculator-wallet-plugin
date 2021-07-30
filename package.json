@@ -1,8 +1,8 @@
 {
-	"name": "delegate-calculator-plugin",
+	"name": "@dated/delegate-calculator-plugin",
 	"version": "1.1.0",
 	"description": "Compare delegate payouts and get an overview of your potential staking rewards directly in the Payvo Wallet",
-	"main": "dist/delegate-calculator-plugin.cjs.js",
+	"main": "dist/dated-delegate-calculator-plugin.cjs.js",
 	"author": "dated <hello@dated.fun>",
 	"license": "MIT",
 	"private": false,
