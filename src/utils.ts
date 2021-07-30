@@ -1,8 +1,8 @@
-import { Numeral } from "@payvo/intl";
+const { I18n } = globalThis.sdk;
 
 const formatCrypto = ({ locale = "en", value, showTicker = true, ...parameters }) => {
 	const ticker = parameters.ticker || "ARK";
-	const numeral = Numeral.make(locale, {
+	const numeral = I18n.Numeral.make(locale, {
 		currencyDisplay: "name",
 		maximumFractionDigits: 8,
 		minimumFractionDigits: 2,
