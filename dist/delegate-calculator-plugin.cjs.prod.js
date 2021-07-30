@@ -18,7 +18,7 @@ const WalletProvider = ({
 const useWalletContext = () => React__default['default'].useContext(WalletContext);
 
 const {
-  I18n
+  Intl
 } = globalThis.sdk;
 
 const formatCrypto = ({
@@ -28,7 +28,7 @@ const formatCrypto = ({
   ...parameters
 }) => {
   const ticker = parameters.ticker || "ARK";
-  const numeral = I18n.Numeral.make(locale, {
+  const numeral = Intl.Numeral.make(locale, {
     currencyDisplay: "name",
     maximumFractionDigits: 8,
     minimumFractionDigits: 2

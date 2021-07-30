@@ -1,8 +1,8 @@
-const { I18n } = globalThis.sdk;
+const { Intl } = globalThis.sdk;
 
 const formatCrypto = ({ locale = "en", value, showTicker = true, ...parameters }) => {
 	const ticker = parameters.ticker || "ARK";
-	const numeral = I18n.Numeral.make(locale, {
+	const numeral = Intl.Numeral.make(locale, {
 		currencyDisplay: "name",
 		maximumFractionDigits: 8,
 		minimumFractionDigits: 2,
