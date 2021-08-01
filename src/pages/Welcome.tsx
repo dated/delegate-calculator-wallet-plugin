@@ -63,7 +63,7 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 
 					{renderContent()}
 
-					<span className="mt-20 text-xs">© {new Date().getFullYear()} dated / v1.1.0</span>
+					<span className="mt-20 font-semibold text-xs">© {new Date().getFullYear()} dated / v1.0.0</span>
 				</div>
 			</div>
 		</div>

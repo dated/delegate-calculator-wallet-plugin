@@ -4,7 +4,7 @@
 
 ## Installation
 
-Install this plugin directly through the Plugins Manager of the Payvo Wallet. Alternatively you can clone or [download this repository](https://github.com/dated/delegate-calculator-plugin/archive/master.zip) and unzip it into `~/.payvo-wallet/plugins/`.
+Install this plugin directly through the Plugins Manager of the Payvo Wallet. Alternatively you can clone or [download this repository](https://github.com/dated/delegate-calculator-payvo-plugin/archive/master.zip) and unzip it into `~/.payvo-wallet/plugins/`.
 
 ## Credits
 

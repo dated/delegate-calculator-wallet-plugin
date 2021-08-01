@@ -635,8 +635,8 @@ const WelcomePage = ({
   }, /*#__PURE__*/React__default['default'].createElement(CoinsIcon, null))), /*#__PURE__*/React__default['default'].createElement("div", {
     className: "flex flex-col w-1/2"
   }, /*#__PURE__*/React__default['default'].createElement("h1", null, "ARK Delegate Calculator"), renderContent(), /*#__PURE__*/React__default['default'].createElement("span", {
-    className: "mt-20 text-xs"
-  }, "\xA9 ", new Date().getFullYear(), " dated / v1.1.0"))));
+    className: "mt-20 font-semibold text-xs"
+  }, "\xA9 ", new Date().getFullYear(), " dated / v1.0.0"))));
 };
 
 const MainPage = () => {
