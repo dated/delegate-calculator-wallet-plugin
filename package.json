@@ -1,22 +1,22 @@
 {
-	"name": "@dated/delegate-calculator-payvo-plugin",
+	"name": "@dated/delegate-calculator-wallet-plugin",
 	"version": "1.0.0",
 	"description": "Compare delegate payouts and get an overview of your potential staking rewards on the ARK Public Network directly in the Payvo Wallet",
-	"main": "dist/dated-delegate-calculator-payvo-plugin.cjs.js",
+	"main": "dist/dated-delegate-calculator-wallet-plugin.cjs.js",
 	"author": "dated <hello@dated.fun>",
 	"license": "MIT",
 	"private": false,
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dated/delegate-calculator-payvo-plugin.git"
+		"url": "git+https://github.com/dated/delegate-calculator-wallet-plugin.git"
 	},
 	"desktop-wallet": {
 		"title": "ARK Delegate Calculator",
-		"logo": "https://raw.githubusercontent.com/dated/delegate-calculator-payvo-plugin/master/images/logo.png",
+		"logo": "https://raw.githubusercontent.com/dated/delegate-calculator-wallet-plugin/master/images/logo.png",
 		"images": [
-	      "https://raw.githubusercontent.com/dated/delegate-calculator-payvo-plugin/master/images/preview-1.png",
-	      "https://raw.githubusercontent.com/dated/delegate-calculator-payvo-plugin/master/images/preview-2.png",
-	      "https://raw.githubusercontent.com/dated/delegate-calculator-payvo-plugin/master/images/preview-3.png"
+	      "https://raw.githubusercontent.com/dated/delegate-calculator-wallet-plugin/master/images/preview-1.png",
+	      "https://raw.githubusercontent.com/dated/delegate-calculator-wallet-plugin/master/images/preview-2.png",
+	      "https://raw.githubusercontent.com/dated/delegate-calculator-wallet-plugin/master/images/preview-3.png"
 	    ],
 		"categories": [
 			"utility"
@@ -39,7 +39,7 @@
 		"@payvo",
 		"wallet-plugin"
 	],
-	"homepage": "https://github.com/dated/delegate-calculator-payvo-plugin",
+	"homepage": "https://github.com/dated/delegate-calculator-wallet-plugin",
 	"scripts": {
 		"format": "yarn lint && yarn prettier",
 		"lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
