@@ -1,7 +1,7 @@
 import React from "react";
 
-import { CoinsIcon } from "../assets/icons/CoinsIcon";
 import { useWalletContext } from "../contexts/WalletProvider";
+import { useImages } from "../hooks/use-image";
 
 const { Components } = globalThis.payvo;
 const { Button, Link } = Components;
@@ -13,6 +13,7 @@ interface WelcomePageProps {
 
 const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageProps) => {
 	const context = useWalletContext();
+	const { getImage } = useImages();
 
 	const renderContent = () => {
 		if (!hasAcceptedDisclaimer) {
@@ -54,7 +55,7 @@ const WelcomePage = ({ hasAcceptedDisclaimer, onAcceptDisclaimer }: WelcomePageP
 			<div className="flex mx-auto container p-10 justify-end items-center">
 				<div className="w-1/2">
 					<div className="transform -rotate-6 p-16 text-theme-danger-400 dark:text-theme-secondary-800">
-						<CoinsIcon />
+						<img src={getImage("calculator")} />
 					</div>
 				</div>
 
