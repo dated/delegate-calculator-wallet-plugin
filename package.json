@@ -1,6 +1,6 @@
 {
 	"name": "@dated/delegate-calculator-wallet-plugin",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Compare delegate payouts and get an overview of your potential staking rewards on the ARK Public Network directly in the Payvo Wallet",
 	"main": "dist/dated-delegate-calculator-wallet-plugin.cjs.js",
 	"author": "dated <hello@dated.fun>",
