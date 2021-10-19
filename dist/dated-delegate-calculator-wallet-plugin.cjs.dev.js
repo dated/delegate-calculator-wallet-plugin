@@ -655,7 +655,7 @@ const MainPage = () => {
   const [isDelegateDetailsOpen, setIsDelegateDetailsOpen] = React.useState(false);
   const [hasAcceptedDisclaimer, setHasAcceptedDisclaimer] = React.useState(false);
   const [mappedDelegates, setMappedDelegates] = React.useState([]);
-  const [wallets] = React.useState(() => context.profile().wallets().filter(wallet => wallet.data.COIN === "ARK" && wallet.data.NETWORK === "ark.mainnet"));
+  const [wallets] = React.useState(() => (context.profile().wallets() || []).filter(wallet => wallet.data.COIN === "ARK" && wallet.data.NETWORK === "ark.mainnet"));
   const [selectedDelegate, setSelectedDelegate] = React.useState();
   const [selectedWallet, setSelectedWallet] = React.useState(() => {
     if (wallets.length) {
