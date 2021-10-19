@@ -19,10 +19,9 @@ export const MainPage = () => {
 	const [mappedDelegates, setMappedDelegates] = useState([]);
 
 	const [wallets] = useState(() =>
-		context
-			.profile()
-			.wallets()
-			.filter((wallet: any) => wallet.data.COIN === "ARK" && wallet.data.NETWORK === "ark.mainnet"),
+		(context.profile().wallets() || []).filter(
+			(wallet: any) => wallet.data.COIN === "ARK" && wallet.data.NETWORK === "ark.mainnet",
+		),
 	);
 
 	const [selectedDelegate, setSelectedDelegate] = useState<any | undefined>();
